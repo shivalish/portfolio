@@ -1,6 +1,6 @@
 body{
     margin: 0em;
-	background-color: white;
+	background-color:white;
     font-family: 'Lato', sans-serif;
 	scroll-behavior: smooth;
     padding:0;
@@ -25,7 +25,6 @@ p{
 a {
 	text-decoration: none;
 	color: #302d2e;
-	transition: 0.3s;
 	font-family: 'Lato', sans-serif;
 	font-size: 150%;
 }
@@ -179,7 +178,7 @@ a:link {
 #insta-img{
 	position: absolute;
 	top: 30%;
-	left: 52%;
+	left: 54%;
 }
 
 #linkedin-img{
@@ -216,22 +215,37 @@ a:link {
 }
 
 
-#linkedin-img:hover, #resume-img:hover, #github-img:hover, #spotify-img:hover, #food-img:hover{
+#linkedin-img:hover, #resume-img:hover, #github-img:hover, #spotify-img:hover, #file-img:hover{
 	opacity: 50%;
 }
 
-/* .row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	justify-content:center;
-	flex-direction: row;
+#frame{
+	position: relative;
+	align-content: center;
+	width: 45%;
+	height:45%;
 }
-  
-  Create five equal columns that sits next to each other
-.column {
-	-ms-flex: 10%;
-	flex: 10%;
-	max-width: 16%;
-  }*/
+
+#iframe-edu{
+	position: absolute;
+	min-height: 46.5%; width: 42%;
+	top: 36.8%;
+	left: 27.8%;
+}
+
+#file-img{
+	position: relative;
+	height:30%;
+	width:30%;
+	padding: 5%;
+}
+
+#project-row {
+	width: fit-content;
+	margin-left: 25%;
+	margin-right:15%;
+	align-items: center; 
+	justify-content: center;
+	align-content: center;
+	display: inline-block;
+}
