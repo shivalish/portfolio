@@ -10,26 +10,25 @@ typewriter.typeString('Welcome to my portfolio!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(1000)
-    .typeString('Scroll down for more!')
+    .typeString('Swipe right for more')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(1000)
     .start();
 
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-        document.getElementById("nav").style.top = "0px";
-        
-    } else {
-        document.getElementById("nav").style.top = "-150px";
-    }
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";
+
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
-
-var navbarchange = document.getElementById("education");
-
-navbarchange.addEventListener("click", function(){
-    document.getElementById("about-gallery").style.animate({
-        "left": 100% }, 1000);
-});
