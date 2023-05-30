@@ -39,35 +39,25 @@ a:link {
 
 #home-section {
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background-color: white;
-	display: flex; 
-	align-items: center; 
+	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	align-content: center;
 	position: absolute;
 	z-index: 1;
 }
 
-#landing-container {
-	padding-right: 4%;
-	padding-left: 4%;
-}
-
-#landing-text {
-	text-align: center;
-	padding: 50px;
+#text-container {
+	padding: 100px;
 }
 
 .title {
+	text-align: center;
     text-decoration: none;
 	color: #535353;
 	font-weight: 400;
-	min-width: 100%;
-	font-size: 400%;
-	padding-left: 5%;
-	padding-right: 5%;
+	font-size: 350%;
 }
 
 .header{
@@ -84,7 +74,8 @@ a:link {
 }
 
 .container {
-	display: flex; 
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center; 
 	justify-content: center;
 	margin: 0;
@@ -92,7 +83,6 @@ a:link {
 
 .column {
 	flex-direction: column;
-	margin: 0;
 }
 
 .row{
@@ -109,12 +99,6 @@ a:link {
   	-webkit-transform: rotate(-45deg);
   	transition: 0.3s;
   	animation: bounce 3s infinite;
-	margin-left: 10%;
-}
-
-#home-arrow{
-	display: inline-block;
-	padding: 10px;
 	margin-left: 10%;
 }
 
@@ -208,7 +192,7 @@ a:link {
 
 #resume-img{
 	max-width: 23%; 
-	max-height:23%;
+	max-height: 23%;
 	position: absolute;
 	bottom: 20%;
 	right: 13%;
