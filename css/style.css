@@ -202,12 +202,13 @@ p{
 }
 
 #console {
-	font-family: Monaco,monospace;
+	font-family: monospace;
+	font-size: 15px;
 	font-weight: 500;
 	background-color: #302d2e;
 	color: white;
 	overflow-y:auto;
-	line-height: 22px;
+	line-height: 20px;
 	height: 50vh;
 	width: 45vw;
 	border-top: 20px solid #e5e5e5;
@@ -220,7 +221,7 @@ label {
 }
 
 #file-img {
-	height:175px;
-	width:240px;
+	max-height:175px;
+	max-width:240px;
 	padding: 50px;
 }

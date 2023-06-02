@@ -36,7 +36,7 @@ const startScript = () => {
   .typeString("<label>CS250</label> - discrete structures <br>")
   .typeString("<label>CS383</label> - artificial intelligence <br>")
   .typeString("<label>CS230</label> - computer systems principles <br>")
-  .typeString("<label>CS311</label> - introduction to algorithms <br>")
+  .typeString("<label>CS311</label> - intro to algorithms <br>")
   .typeString("<label>CS446</label> - search engines <br>")
   .typeString("<label>CS453</label> - computer networks <br>")
   .typeString("<label>CS320</label> - software engineering <br>")
