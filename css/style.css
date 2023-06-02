@@ -22,7 +22,7 @@ p{
 }
 
 #home-section {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -82,7 +82,6 @@ p{
   	-webkit-transform: rotate(-45deg);
   	transition: 0.3s;
   	animation: bounce 3s infinite;
-	margin-left: 10%;
 }
 
 .arrow:hover {
@@ -130,6 +129,7 @@ p{
 	grid-row-end: span 2;
 	align-self: center;
 	padding-left: 20px;
+	
 }
 
 .intro-box {
@@ -197,7 +197,7 @@ p{
 	max-height: 150px;
 }
 
-#social-icon:hover, #resume-img:hover{
+#social-icon:hover, #resume-img:hover, #file-img:hover{
 	opacity: 50%;
 }
 
@@ -219,46 +219,8 @@ label {
 	color: #f49e67;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*#frame{
-	position: relative;
-	align-content: center;
-	width: 45%;
-	height:45%;
-}
-
-#iframe-edu{
-	position: absolute;
-	min-height: 46.5%; width: 42%;
-	top: 36.8%;
-	left: 27.8%;
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-
-#file-img{
-	position: relative;
-	height:30%;
-	width:30%;
-	padding: 5%;
-}*/
-
-#project-row {
-	width: fit-content;
-	margin-left: 25%;
-	margin-right:15%;
-	align-items: center; 
-	justify-content: center;
-	align-content: center;
-	display: inline-block;
+#file-img {
+	height:175px;
+	width:240px;
+	padding: 50px;
 }
