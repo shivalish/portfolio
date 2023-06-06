@@ -1,0 +1,84 @@
+.grid {
+	display: grid;
+	grid-template-columns: 500px, 200px, 200px, 500px, 100px, 100px;
+	grid-template-rows: 100px, auto;
+	column-gap: 40px;
+}
+
+.arrow-section {
+	grid-column-start: 5 / 6;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	align-self: center;
+	padding-left: 20px;
+	
+}
+
+.intro-box {
+	grid-row-start: 1;
+	grid-row-end: span 2;
+}
+
+.edu-box {
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+}
+
+.linkedin {
+	grid-column: 2 / 3;
+}
+
+.github {
+	grid-column: 3 / 4;
+}
+
+.slide-gallery {
+	grid-column: 4 / 5;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+}
+
+.spotify {
+	grid-column: 5 / 6;
+	grid-row: 1;
+}
+
+.resume {
+	grid-column: 5 / 6;
+	grid-row: 2;
+}
+
+#slideshow-img {
+	max-height: 400px;
+	max-width: 500px;
+}
+
+#hello-img{
+	max-height: 400px;
+}
+
+#edu-img{
+	max-height: 225px;
+	max-width: 300px;
+}
+
+#insta-img{
+	max-width: 400px; 
+	max-height: 500px;
+}
+
+#social-icon {
+	max-width: 120px; 
+	max-height: 120px;
+}
+
+#resume-img{
+	max-width: 150px; 
+	max-height: 150px;
+}
+
+#social-icon:hover, #resume-img:hover{
+	opacity: 50%;
+}

@@ -1,27 +1,6 @@
-const app = document.getElementById("app");
 const console = document.getElementById("console");
-const eduarrow = document.getElementById("eduarrow");
 
-const landingscript = new Typewriter(app, {
-    loop: true,
-    delay:50,
-    deleteSpeed:5
-});
-
-landingscript.typeString('Welcome to my portfolio!')
-    .pauseFor(1000)
-    .deleteAll()
-    .pauseFor(1000)
-    .typeString('Swipe right for more')
-    .pauseFor(1000)
-    .deleteAll()
-    .pauseFor(1000)
-    .start();
-
-
-const startScript = () => {
-
-  const eduscript =  new Typewriter(console, {
+const eduscript =  new Typewriter(console, {
     autoStart: true,
     strings: "$ ",
     delay: 60
@@ -48,24 +27,3 @@ const startScript = () => {
   .typeString("<label>CS520</label> - software engineering theory & best practice** <br>")
   .typeString("<br> **in progress <br>$ ")
   .start();
-
-}
-
-
-var slideIndex = 0;
-
-const showSlides = () => {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";
-
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
-}
-
-eduarrow.addEventListener("click", startScript);
-showSlides();

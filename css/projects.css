@@ -1,0 +1,9 @@
+#file-img:hover{
+	opacity: 50%;
+}
+
+#file-img {
+	max-height:175px;
+	max-width:240px;
+	padding: 50px;
+}

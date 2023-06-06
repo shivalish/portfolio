@@ -4,6 +4,13 @@ body{
     font-family: 'Lato', sans-serif;
 	scroll-behavior: smooth;
     padding:0;
+
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	min-height: 100vh;
+	min-width: 100%;
+	position: absolute;
 }
 
 * {
@@ -106,128 +113,3 @@ p{
 	  transform: translateX(-15px) rotate(-45deg);
 	}
   }
-
-#about-section, #education-section, #project-section {
-	background-image: url(../images/background.png);
-	background-repeat: no-repeat;
-	background-size:cover;
-	min-height: 100vh;
-	min-width: 100%;
-	position: absolute;
-	z-index: 0;
-  }
-
-#about-section:target, #education-section:target, #project-section:target, #home-section:target {
-	z-index: 1;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: 500px, 200px, 200px, 500px, 100px, 100px;
-	grid-template-rows: 100px, auto;
-	column-gap: 40px;
-}
-
-.arrow-section {
-	grid-column-start: 5 / 6;
-	grid-row-start: 1;
-	grid-row-end: span 2;
-	align-self: center;
-	padding-left: 20px;
-	
-}
-
-.intro-box {
-	grid-row-start: 1;
-	grid-row-end: span 2;
-}
-
-.edu-box {
-	grid-column-start: 2;
-	grid-column-end: span 2;
-	grid-row-start: 1;
-	grid-row-end: span 1;
-}
-
-.linkedin {
-	grid-column: 2 / 3;
-}
-
-.github {
-	grid-column: 3 / 4;
-}
-
-.slide-gallery {
-	grid-column: 4 / 5;
-	grid-row-start: 1;
-	grid-row-end: span 2;
-}
-
-.spotify {
-	grid-column: 5 / 6;
-	grid-row: 1;
-}
-
-.resume {
-	grid-column: 5 / 6;
-	grid-row: 2;
-}
-
-#slideshow-img {
-	max-height: 400px;
-	max-width: 500px;
-}
-
-#hello-img{
-	max-height: 400px;
-}
-
-#edu-img{
-	max-height: 225px;
-	max-width: 300px;
-}
-
-#insta-img{
-	max-width: 400px; 
-	max-height: 500px;
-}
-
-#social-icon {
-	max-width: 120px; 
-	max-height: 120px;
-}
-
-#resume-img{
-	max-width: 150px; 
-	max-height: 150px;
-}
-
-#social-icon:hover, #resume-img:hover, #file-img:hover{
-	opacity: 50%;
-}
-
-#console {
-	font-family: monospace;
-	font-size: 15px;
-	font-weight: 500;
-	background-color: #302d2e;
-	color: white;
-	overflow-y:auto;
-	line-height: 20px;
-	height: 50vh;
-	width: 45vw;
-	border-top: 20px solid #e5e5e5;
-	border-radius: 4px;
-	box-shadow: 12px 12px 1px #9eb8ce;
-	margin-left: 250px;
-}
-
-label {
-	color: #f49e67;
-}
-
-#file-img {
-	max-height:175px;
-	max-width:240px;
-	padding: 50px;
-}
