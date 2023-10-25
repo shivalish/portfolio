@@ -21,9 +21,8 @@ const eduscript =  new Typewriter(console, {
   .typeString("<label>CS320</label> - software engineering <br>")
   .typeString("<label>CS326</label> - web programming <br>")
   .typeString("<label>CS325</label> - human computer interaction <br>")
-  .typeString("<label>CS429</label> - software engineering project management** <br>")
-  .typeString("<label>CS490S</label> - scalable web systems** <br>")
-  .typeString("<label>CS345</label> - intro to databases** <br>")
-  .typeString("<label>CS520</label> - software engineering theory & best practice** <br>")
-  .typeString("<br> **in progress <br>$ ")
+  .typeString("<label>CS429</label> - software engineering project management <br>")
+  .typeString("<label>CS345</label> - databases <br>")
+  .typeString("<label>CS377</label> - operating systems <br>")
+  .typeString("<br>$ ")
   .start();
