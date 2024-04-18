@@ -24,5 +24,8 @@ const eduscript =  new Typewriter(console, {
   .typeString("<label>CS429</label> - software engineering project management <br>")
   .typeString("<label>CS345</label> - databases <br>")
   .typeString("<label>CS377</label> - operating systems <br>")
+  .typeString("<label>CS389</label> - machine learning <br>")
+  .typeString("<label>CS445</label> - database management <br>")
+  .typeString("<label>CS390</label> - reverse engineering <br>")
   .typeString("<br>$ ")
   .start();
